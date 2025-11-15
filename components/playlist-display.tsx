@@ -45,14 +45,14 @@ export default function PlaylistDisplay({
             </div>
           </div>
           <div className="flex items-center gap-1 ml-2">
-            <Button
+            <button
               onClick={() => onRemoveSong(song.id)}
               size="sm"
               className="h-8 w-8 p-0 rounded-full flex items-center justify-center bg-red-500 hover:bg-red-600 text-white opacity-0 group-hover:opacity-100 transition-all shadow-md"
               aria-label={`Remove ${song.title}`}
             >
               <Trash2 className="w-4 h-4" />
-            </Button>
+            </button>
           </div>
         </div>
       ))}
